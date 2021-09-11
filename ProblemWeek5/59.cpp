@@ -1,9 +1,11 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿
+#define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include<string.h>
 
 
-// 59 จงเขียนโปรแกรมรับตัวอักษร 1 ชุด แล้วแสดงผลลัพธ์จากหลังมาหน้า (Level 3)
+// 59. จงเขียนโปรแกรมรับตัวอักษร 1 ชุด แล้วแสดงผลลัพธ์จากหลังมาหน้า (Level 3)
+
+
 
 int main()
 {
@@ -13,14 +15,14 @@ int main()
 	scanf("%s",&sen);
 	printf("Output : ");
 	int length = strlen(sen);
-	
-	
-	
+
+
+
 	for (i = length; i >= 0; i--)
 	{
 		printf("%c", sen[i]);
 	}
 
-	
-	
+
+
 }

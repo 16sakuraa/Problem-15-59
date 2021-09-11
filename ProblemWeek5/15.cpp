@@ -4,23 +4,48 @@
 // 15. เขียนโปรแกรมเพื่อรับค่าจำนวนเต็มมา 1 จำนวน (ผู้ตรวจจะใส่ค่าตั้งแต่ 100 – 999) แล้วทำการแยกตัวเลขแต่ละหลักออกมาแล้วหาผลคูณของตัวเลขทุกหลัก ให้ทําซ้ำเช่นนี้ไปเรื่อย ๆ
 // จนเหลือผลลัพธ์เป็นเลขหลักเดียว ดังตัวอย่างการทำงานของโปรแกรม (Level 2)
 
-int main()
+/*void threenumber(int num)
 {
-	int a,b,c,sum;
-	printf("Input Number : ");
-	scanf("%d%d%d", &a,&b,&c);
+	int newnum[3], i = 2, temp;
 
-	while ((a * b * c) > 0)
+	temp = num;
+	while (num > 0)
 	{
-		sum = (a * b * c);
-		printf("%d . %d . %d = %d\n", a , b , c , sum);
-		c = sum % 10;
-		sum /= 10;
-		b = sum % 10;
-		sum /= 10;
-		a = sum % 10;
+		newnum[i] = num % 10;
+		num /= 10;
+		i--;
 	}
 
-	
+	if (temp < 100 && temp >= 10)
+	{
+		newnum[0] = 0;
+		num = 0;
+		printf("%d . %d . %d = %d\n", newnum[0], newnum[1], newnum[2], num);
+	}
+	else if (temp >= 100)
+	{
+		num = newnum[0] * newnum[1] * newnum[2];
+		printf("%d . %d . %d = %d\n", newnum[0], newnum[1], newnum[2], num);
+	}
 
-} 
+	if (num >= 10)
+	{
+		threenumber(num);
+	}
+
+}
+
+
+int main()
+{
+	int num;
+	printf("Input Number : ");
+	scanf("%d", &num);
+
+	threenumber(num);
+
+}
+
+*/
+
+
